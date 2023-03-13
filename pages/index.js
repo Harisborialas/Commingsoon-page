@@ -138,7 +138,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <footer className="footer">
+        <footer id="footer">
           <div className="col-lg-6 float-left">
             <a href="">
               <img
