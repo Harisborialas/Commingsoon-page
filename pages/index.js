@@ -70,8 +70,8 @@ export default function Home() {
               <img
                 src="/logo.png"
                 alt="Logo"
-                width="100"
-                height="100"
+                width="80"
+                height="80"
                 class="d-inline-block align-text-top"
               />
             </a>
