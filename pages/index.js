@@ -95,11 +95,11 @@ export default function Home() {
           <div className="col-lg-6 col-md-5 col-sm-12" id="col2">
             <div className="row" id="backgroundimg">
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <h1>
+                <h1 className="text-white">
                   Something big is on
                   <br /> The horizon!
                 </h1>
-                <p className="">Join us for the next big thing</p>
+                <p className="text-white">Join us for the next big thing</p>
               </div>
 
               <div className="col-lg-12 col-md-12 col-sm-12 " id="col3">
@@ -151,8 +151,8 @@ export default function Home() {
             </a>
           </div>
           <div className="col-lg-6 d-flex justify-content-end float-right">
-            <p className="mt-5 text-sm  mx-2 ">All right reserved</p>
-            <p className="mt-5 text-sm  mx-2 ">Privacy Policy</p>
+            <p className="mt-5 text-sm  mx-2 text-white">All right reserved</p>
+            <p className="mt-5 text-sm  mx-2 text-white">Privacy Policy</p>
           </div>
         </footer>
       </div>
