@@ -17,8 +17,13 @@ export default function Home() {
   const onSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(values.email)) {
-      errorMsg: "Please enter a valid email address.";
+      // errorMsg: "Please enter a valid email address.";
       // alert("Please enter a valid email address.");
+      // return;
+      setState((prev) => ({
+        ...prev,
+        errorMsg: "Please enter a valid email address.",
+      }));
       return;
     }
     setState((prev) => ({
@@ -108,7 +113,7 @@ export default function Home() {
                 <p id="para">Join us for the next big thing</p>
               </div>
 
-              <div className="col-lg-12 col-md-12 col-sm-12 " id="col3">
+              <div className="col-lg-12 col-md-6 col-sm-12 " id="col3">
                 <form>
                   <input
                     type={"email"}
@@ -128,7 +133,6 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    disabled={!values.email}
                     onClick={onSubmit}
                     isloading={isloading}
                     className="btn btn-outline-primary"
