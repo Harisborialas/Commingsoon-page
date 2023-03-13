@@ -2,43 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Path: styles\index.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Light theme */
+body.light #mainpage {
+  background-color: #ffffff;
+  color: #121228;
+}
+body.light h1,
+body.light p,
+body.light a,
+body.light button,
+body.light #btn,
+body.light input {
+  background-color: white;
+  color: #121228;
+}
+
+/* Dark theme */
+body.dark #mainpage {
+  background-color: #121228;
+  color: #f5f5f5;
+}
+
 #mainpage {
   background-color: #121228;
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
-label{
+label {
   position: absolute;
   right: 180px;
   top: 13px;
 }
-.dropdown{
-  position: absolute;
-  right: 0;
-  top: 5px;
-}
 #email {
   width: 80%;
   padding: 10px 30px;
-  border: none;
-  border: 2px solid #f3f3f3;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   color: #000000;
 }
 #btn {
-  background-color: #f3f3f3;
-  color: #121228;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
-  border-radius: 5px;
+  border: 2px solid;
   font-size: 1rem;
-  border: none;
   padding: 10px 30px;
   width: 80%;
 }
 #btn:hover {
+  color: #ffffff;
   background-color: #121228;
-  color: #f3f3f3;
-  border: 2px solid #f3f3f3;
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #77bef3, #74ed76) 1 round;
+  border-radius: 10px !important;
+  transition: 1s;
 }
 
 #Navcol2 {
@@ -50,7 +68,6 @@ label{
   top: 50%;
 }
 
-
 #imagesdiv {
   position: relative;
 }
@@ -61,14 +78,15 @@ label{
 #row2 {
   position: relative;
   top: 20px;
+  background-image: url("/backgroundpic.png");
 }
 #col2 {
   position: absolute;
   right: 0;
-  top: 10%;
+  top: 10px;
 }
-#backgroundimg{
-    z-index: 1;
+#backgroundimg {
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,10 +96,12 @@ label{
     height: 100vh;
     font-family: "Poppins", sans-serif;
     position: relative;
+    border-bottom: #f3f3f3;
   }
   .footer {
     position: absolute;
     bottom: 0px;
+    display: flex;
     font-size: 3px;
   }
 
@@ -100,7 +120,7 @@ label{
     right: 10px;
     top: 0;
   }
- 
+
   #row2 {
     flex-direction: column;
     align-items: center;
@@ -109,21 +129,25 @@ label{
   }
   #imagesdiv {
     position: absolute;
-    top: 150px;
+    top: 80px;
   }
   #col2 {
     position: absolute;
-    top: 0px;
+    top: -80px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  #col22 {
+    position: absolute;
+    top: -40px;
+    text-align: center;
+  }
   #col3 {
     position: absolute;
-    top: 400px;
+    top: 440px;
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: aut;
   }
   #col3 input {
     width: 100%;
@@ -132,21 +156,19 @@ label{
   #col3 button {
     width: 100%;
   }
-
-  #image1 {
-    width: 100%;
-    height: auto;
+  .footer {
+    font-size: 0.1rem;
+    justify-content: space-between;
   }
 }
 /* __________________________________________________________________ */
-
 
 /* Style the button that triggers the dropdown */
 .dropbtn {
   background-color: #121228;
   color: white;
-  padding: 12px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
 }
@@ -156,12 +178,12 @@ label{
   display: none;
   position: absolute;
   z-index: 1;
-  background-color: #f1f1f1;
 }
 
 /* Style the links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: white;
+  background-color: #121228;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -179,18 +201,17 @@ label{
     width: 100%;
     position: static;
     display: none;
+    position: absolute;
     overflow: hidden;
   }
-  
+
   /* Hide the links */
   .dropdown-content a {
     display: none;
   }
-  
+
   /* Show the links when the dropdown is open */
   .dropdown:hover .dropdown-content a {
     display: block;
   }
 }
-
-

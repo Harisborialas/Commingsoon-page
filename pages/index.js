@@ -44,6 +44,19 @@ export default function Home() {
       },
     }));
   };
+  
+  
+  const darktheme = () =>{
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+  }
+  const lighttheme = () =>{
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+  }
+
+
+ 
 
   return (
     <>
@@ -66,26 +79,30 @@ export default function Home() {
               <div class="dropdown">
                 <button class="dropbtn">Theme</button>
                 <div class="dropdown-content">
-                  <a href="#">dark</a>
-                  <a href="#">light</a>
+                  <a href="#" id="dark-theme-link" onClick={darktheme} >
+                    dark
+                  </a>
+                  <a href="#" id="light-theme-link" onClick={lighttheme} >
+                    light
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </nav>
 
-        <div className="row d-flex" id="row2">
-          <div className="col-lg-6 col-md-5 col-sm-12 float-right " id="col2">
+        <div className="row" id="row2">
+          <div className="col-lg-6 col-md-5 col-sm-12" id="col2">
             <div className="row" id="backgroundimg">
-              <div className="col-lg-6 col-md-12 col-sm-12">
-                <h1 className="text-white">
+              <div className="col-lg-12 col-md-12 col-sm-12">
+                <h1>
                   Something big is on
                   <br /> The horizon!
                 </h1>
-                <p className="text-white">Join us for the next big thing</p>
+                <p className="">Join us for the next big thing</p>
               </div>
 
-              <div className="col col-md-12 col-sm-12 " id="col3">
+              <div className="col-lg-12 col-md-12 col-sm-12 " id="col3">
                 <form>
                   <input
                     type={"email"}
@@ -111,9 +128,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div
-            className="col-lg-6 col-md-6 col-sm-12 mt-3 mx-5 float-left"
-            id="imagesdiv">
+          <div className="col-lg-6 col-md-6 col-sm-12 mt-3 mx-5" id="imagesdiv">
             <Image
               src="/sideimage.png"
               alt=""
@@ -124,7 +139,7 @@ export default function Home() {
           </div>
         </div>
         <footer className="footer">
-          <div className="col-6 float-left">
+          <div className="col-lg-6 float-left">
             <a href="">
               <img
                 src="/Twitter.png"
@@ -135,13 +150,9 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className="col-6 d-flex justify-content-end">
-            <p className="mt-5 text-sm float-right mx-4 text-white">
-              All right reserved
-            </p>
-            <p className="mt-5 text-sm float-right mx-5 text-white">
-              Privacy Policy
-            </p>
+          <div className="col-lg-6 d-flex justify-content-end float-right">
+            <p className="mt-5 text-sm  mx-2 ">All right reserved</p>
+            <p className="mt-5 text-sm  mx-2 ">Privacy Policy</p>
           </div>
         </footer>
       </div>
