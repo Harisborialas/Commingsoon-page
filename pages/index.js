@@ -1,71 +1,72 @@
-import { sendContactForm } from "@/lib/api";
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
+import CommingSoonPage from "@/Components/commingSoonPage";
+// import { sendContactForm } from "@/lib/api";
+// import Head from "next/head";
+// import Image from "next/image";
+// import { useState } from "react";
 
-const initvalues = {
-  email: "",
-};
-const initState = {
-  values: initvalues,
-  errorMsg: "",
-};
+// const initvalues = {
+//   email: "",
+// };
+// const initState = {
+//   values: initvalues,
+//   errorMsg: "",
+// };
 export default function Home() {
-  const [state, setState] = useState(initState);
-  const { values, isloading } = state;
+  // const [state, setState] = useState(initState);
+  // const { values, isloading } = state;
 
-  const onSubmit = async () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(values.email)) {
-      // errorMsg: "Please enter a valid email address.";
-      // alert("Please enter a valid email address.");
-      // return;
-      setState((prev) => ({
-        ...prev,
-        errorMsg: "Please enter a valid email address.",
-      }));
-      return;
-    }
-    setState((prev) => ({
-      ...prev,
-      errorMsg: "Please enter a valid email address.",
-      isloading: true,
-      errorMsg: "",
-    }));
-    try {
-      await sendContactForm(values);
-      setState(initState);
-    } catch (error) {
-      setState((prev) => ({
-        ...prev,
-        isloading: false,
-        error: error.message,
-      }));
-    }
-  };
+  // const onSubmit = async () => {
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   if (!emailRegex.test(values.email)) {
+  //     // errorMsg: "Please enter a valid email address.";
+  //     // alert("Please enter a valid email address.");
+  //     // return;
+  //     setState((prev) => ({
+  //       ...prev,
+  //       errorMsg: "Please enter a valid email address.",
+  //     }));
+  //     return;
+  //   }
+  //   setState((prev) => ({
+  //     ...prev,
+  //     errorMsg: "Please enter a valid email address.",
+  //     isloading: true,
+  //     errorMsg: "",
+  //   }));
+  //   try {
+  //     await sendContactForm(values);
+  //     setState(initState);
+  //   } catch (error) {
+  //     setState((prev) => ({
+  //       ...prev,
+  //       isloading: false,
+  //       error: error.message,
+  //     }));
+  //   }
+  // };
 
-  const handleChange = ({ target }) => {
-    setState((prev) => ({
-      ...prev,
-      values: {
-        ...prev.values,
-        [target.name]: target.value,
-      },
-    }));
-  };
+  // const handleChange = ({ target }) => {
+  //   setState((prev) => ({
+  //     ...prev,
+  //     values: {
+  //       ...prev.values,
+  //       [target.name]: target.value,
+  //     },
+  //   }));
+  // };
 
-  const darktheme = () => {
-    document.body.classList.remove("light");
-    document.body.classList.add("dark");
-  };
-  const lighttheme = () => {
-    document.body.classList.remove("dark");
-    document.body.classList.add("light");
-  };
+  // const darktheme = () => {
+  //   document.body.classList.remove("light");
+  //   document.body.classList.add("dark");
+  // };
+  // const lighttheme = () => {
+  //   document.body.classList.remove("dark");
+  //   document.body.classList.add("light");
+  // };
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Create Next App</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -174,8 +175,9 @@ export default function Home() {
               Privacy Policy
             </p>
           </div>
-        </footer>
-      </div>
+        </footer> */}
+      {/* </div> */}
+      <CommingSoonPage/>
     </>
   );
 }
