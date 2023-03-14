@@ -77,7 +77,7 @@ const CommingSoonPage = () => {
         <div className="row">
           <nav class="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand text-white" href="#" id="BYC">
+              <a class="navbar-brand" href="#" id="BYC">
                 <img
                   src="/logo.png"
                   alt="Logo"
@@ -85,7 +85,8 @@ const CommingSoonPage = () => {
                   height="54"
                   class="d-inline-block align-text-top"
                 />
-                BYC
+                <span id="BYCtext" >BYC</span>
+                
               </a>
               <span class="navbar-text d-flex justify-center">
                 <span id="Theme">Theme</span>
@@ -113,15 +114,17 @@ const CommingSoonPage = () => {
                 id="imgmain1">
                 <img src="/sideimage.png" alt="" />
               </div>
-              <div className="col-lg-6 col-12  order-1 order-lg-2">
+              <div
+                className="col-lg-6 col-12  order-1 order-lg-2"
+                id="midimgbackground">
                 <div className="row">
                   <div className="col-12 pt-5">
-                    <h1 className="text-4xl font-bold text-white" id="heading">
+                    <h1 className="text-4xl font-bold " id="heading">
                       Something big is on
                       <br /> the horizon!
                     </h1>
-                    <p className="text-2xl font-bold text-white" id="paragraph">
-                    Join us for the next big thing
+                    <p className="text-2xl font-bold " id="paragraph">
+                      Join us for the next big thing
                     </p>
                   </div>
                 </div>
@@ -166,21 +169,21 @@ const CommingSoonPage = () => {
         </div>
 
         <div className="row p-3">
-          <div className="col-lg-6 col-12 p-1">
-            <a href="">
+          <div className="col-lg-1 col-12 p-1">
+            <a href="#">
               <img
                 src="/Twitter.png"
                 alt=""
                 id="imgfooter"
                 width={100}
                 height={100}
-                className=""
               />
             </a>
           </div>
-          <div className="col-lg-6 col-12 p-1" id="footerparas">
-            <p id="footerp1" >©2023 All rights reserved.</p>
-            <p id="footerp2">Privacy Policy</p>
+          <div className="col-8"></div>
+          <div className="col-lg-3 col-12 p-1" id="footerparas">
+              <p id="footerp1">©2023 All rights reserved.</p>
+              <p id="footerp2">Privacy Policy</p>
           </div>
         </div>
       </div>

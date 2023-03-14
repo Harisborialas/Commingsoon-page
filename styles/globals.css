@@ -45,6 +45,9 @@
 
   color: #ffffff;
 }
+#midimgbackground{
+  background-image: url('/backgroundpic.png');
+}
 #paragraph {
   width: 241px;
   height: 30px;
@@ -57,7 +60,8 @@
 }
 #imgfooter {
   position: relative;
-
+  padding: 8px;
+  border-radius: 5px;
   background: #121228;
 }
 #footerparas{
@@ -87,14 +91,43 @@
 }
 
 /* Light theme */
-body.light #mainpage {
+body.light .container-fluid {
   background-color: #ffffff;
   color: #121228;
 }
 body.light #headingmain,
-body.light input {
+body.light input,
+body.light #footerp1,
+body.light #footerp2,
+body.light #Theme,
+body.light #paragraph,
+body.light #email,
+body.light #heading,
+body.light #footerparas,
+body.light #imgfooter,
+body.light #imgmain1,
+body.light #imgmain2,
+body.light #paragraph
+{
   /* background-color: white; */
   color: #121228;
+}
+
+body.light #btn{
+  background-color: #121228;
+  color: #ffffff;
+  
+  box-shadow: 0px 0px 23px 8px rgba(120, 255, 214, 0.1);
+}
+
+body.light .dropbtn{
+  background-color: #ffffff;
+  color: #797979;
+}
+
+body.light span{
+  color: #121228;
+
 }
 
 /* Dark theme */
