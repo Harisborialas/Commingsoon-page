@@ -72,8 +72,15 @@ const CommingSoonPage = () => {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;800&display=swap"
           rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+          rel="stylesheet"></link>
       </Head>
-      <div className="container-fluid">
+      <div className="container-fluid" id="maincontainer">
         <div className="row">
           <nav class="navbar">
             <div class="container-fluid">
@@ -85,8 +92,7 @@ const CommingSoonPage = () => {
                   height="54"
                   class="d-inline-block align-text-top"
                 />
-                <span id="BYCtext" >BYC</span>
-                
+                <span id="BYCtext">BYC</span>
               </a>
               <span class="navbar-text d-flex justify-center">
                 <span id="Theme">Theme</span>
@@ -110,16 +116,16 @@ const CommingSoonPage = () => {
           <div className="col-lg-12 col-12">
             <div className="row">
               <div
-                className="col-lg-6 col-12  order-2 order-lg-1"
+                className="col-lg-6 col-12 px-5 py-2 order-2 order-lg-1"
                 id="imgmain1">
-                <img src="/sideimage.png" alt="" />
+                <img src="/sideimage.png" alt="" width={600} height={500} />
               </div>
               <div
-                className="col-lg-6 col-12  order-1 order-lg-2"
+                className="col-lg-6 col-12 p-4 py-2 order-1 order-lg-2"
                 id="midimgbackground">
-                <div className="row">
+                <div className="row" id="rowheading">
                   <div className="col-12 pt-5">
-                    <h1 className="text-4xl font-bold " id="heading">
+                    <h1 className=" font-bold " id="heading">
                       Something big is on
                       <br /> the horizon!
                     </h1>
@@ -129,16 +135,16 @@ const CommingSoonPage = () => {
                   </div>
                 </div>
                 <div className="row" id="imgmain2">
-                  <div className="col-12">
+                  <div className="col-12" id="imgcolmain2">
                     <img src="/sideimage.png" alt="" />
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-12 pt-3">
+                <div className="row" id="rowform">
+                  <div className="col-12 pt-3" id="colform">
                     <form>
                       <input
                         type={"email"}
-                        className="form-control my-2 mt-3 w-100"
+                        className="form-control my-2"
                         id="email"
                         placeholder="Enter your email"
                         name="email"
@@ -156,7 +162,7 @@ const CommingSoonPage = () => {
                         type="submit"
                         onClick={onSubmit}
                         isloading={isloading}
-                        className="btn btn-outline-primary w-100 mb-3"
+                        className="btn mb-3 "
                         id="btn">
                         Get Notified
                       </button>
@@ -180,10 +186,10 @@ const CommingSoonPage = () => {
               />
             </a>
           </div>
-          <div className="col-8"></div>
-          <div className="col-lg-3 col-12 p-1" id="footerparas">
-              <p id="footerp1">©2023 All rights reserved.</p>
-              <p id="footerp2">Privacy Policy</p>
+          <div className="col-7"></div>
+          <div className="col-lg-4 col-12 p-1" id="footerparas">
+            <p id="footerp1">©2023 All rights reserved.</p>
+            <p id="footerp2">Privacy Policy</p>
           </div>
         </div>
       </div>
