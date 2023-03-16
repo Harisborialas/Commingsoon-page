@@ -118,7 +118,7 @@ const CommingSoonPage = () => {
           </div>
           <div className="row d-flex justify-center">
             <div
-              className="col-12 d-flex justify-center"
+              className="col-12"
               id="tooglebtnrow">
               <div class="toggle-button">
                 <input type="checkbox" id="toggle" class="toggle-input" />

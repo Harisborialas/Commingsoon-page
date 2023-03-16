@@ -268,6 +268,8 @@ body.dark #mainpage {
 
 .toggle-button {
   display: inline-block;
+  position: relative;
+  left: 220px;
   width: 500px;
   height: 34px;
 }
