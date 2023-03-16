@@ -269,7 +269,7 @@ body.dark #mainpage {
 }
 .toggle-button {
   display: inline-block;
-  width: 500px;
+  width: 450px;
   height: 34px;
 }
 
@@ -331,7 +331,7 @@ body.dark #mainpage {
 }
 
 .toggle-input:checked + .toggle-label:before {
-  transform: translateX(266px);
+  transform: translateX(216px);
 }
 
 /* ___________________________Toogle btn end________________ */
