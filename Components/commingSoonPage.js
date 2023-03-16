@@ -105,7 +105,7 @@ const CommingSoonPage = () => {
                     <button class="dropbtn">
                       <img src="/mode.png" alt="" width={20} height={20} className="mx-2 " />
                       <span id="Dark" >Dark</span>
-                      <img src="/arrow.png" alt="" width={20} height={20} className="mx-2 "/>
+                      <img src="/arrow.png" alt="" width={20} height={20} className="mx-2 mt-1"/>
                     </button>
                     <div class="dropdown-content">
                       <a href="#" id="dark-theme-link" onClick={darktheme}>
