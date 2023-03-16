@@ -116,7 +116,7 @@ const CommingSoonPage = () => {
               </div>
             </nav>
           </div>
-          <div className="row d-flex justify-center">
+          <div className="row my-3 d-flex justify-center">
             <div className="col-12" id="tooglebtncol">
               <div class="toggle-button">
                 <input type="checkbox" id="toggle" class="toggle-input" />
@@ -189,7 +189,7 @@ const CommingSoonPage = () => {
             </div>
           </div>
           <div className="row my-5" id="threedivrow">
-            <div className="col-lg-4 col-12 p-3 ">
+            <div className="col-lg-4 col-12 p-3" id="threedivcol1">
               <img src="/tool.png" alt="" width={52} height={52} />
               <h4 id="h4first">
                 <span className="textgradientcols">First</span> and
@@ -201,7 +201,7 @@ const CommingSoonPage = () => {
                 Repellendus delectus voluptatum iusto, alias id.
               </p>
             </div>
-            <div className="col-lg-4 col-12 p-3">
+            <div className="col-lg-4 col-12 p-3" id="threedivcol2">
               <img src="/ease.png" alt="" width={52} height={52} />
               <h4 id="h4second">
                 <span className="textgradientcols">Computation</span> with Ease
@@ -213,7 +213,7 @@ const CommingSoonPage = () => {
               </p>
             </div>
             <div className="col-lg-4 col-12 p-3">
-              <img src="/cost.png" alt="" width={52} height={52}/>
+              <img src="/cost.png" alt="" width={52} height={52} />
               <h4 id="h4third">
                 <span className="textgradientcols">No Minimum</span> Cost Limit
               </h4>
