@@ -266,10 +266,12 @@ body.dark #mainpage {
 /* -------------------------------------------- */
 /* ___________________________Toogle btn start___________ */
 
+#tooglebtncol{
+  display: flex;
+  justify-content: center
+}
 .toggle-button {
   display: inline-block;
-  position: relative;
-  left: 220px;
   width: 500px;
   height: 34px;
 }

@@ -119,7 +119,7 @@ const CommingSoonPage = () => {
           <div className="row d-flex justify-center">
             <div
               className="col-12"
-              id="tooglebtnrow">
+              id="tooglebtncol">
               <div class="toggle-button">
                 <input type="checkbox" id="toggle" class="toggle-input" />
                 <label for="toggle" class="toggle-label">
