@@ -90,17 +90,20 @@
   border: 1px solid #131335;
   border-radius: 20px;
 }
+.textgradientcols{
+  background: linear-gradient(113.63deg, #6ae678 6.76%, #38b5e7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 #h4first {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
   line-height: 48px;
-  background: linear-gradient(113.63deg, #6ae678 6.76%, #38b5e7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: white;
 }
 #h4second {
   font-family: "Poppins";
@@ -108,11 +111,7 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 48px;
-  background: linear-gradient(113.63deg, #6ae678 6.76%, #38b5e7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: white;
 }
 #h4third {
   font-family: "Poppins";
@@ -120,11 +119,7 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 48px;
-  background: linear-gradient(113.63deg, #6ae678 6.76%, #38b5e7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: white;
 }
 .paragraph {
   font-family: "Open Sans";
@@ -174,7 +169,8 @@
 }
 
 /* Light theme */
-body.light .container-fluid {
+body.light #maincontainer,
+body.light #body {
   background-color: #ffffff;
   color: #121228;
 }
@@ -182,6 +178,7 @@ body.light #headingmain,
 body.light input,
 body.light #footerp1,
 body.light #footerp2,
+body.light #BYCtext,
 body.light #Theme,
 body.light #paragraph,
 body.light #email,
@@ -385,6 +382,10 @@ body.dark #mainpage {
   }
   #btn {
     width: 100%;
+  }
+  #footerparas {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 990px) {

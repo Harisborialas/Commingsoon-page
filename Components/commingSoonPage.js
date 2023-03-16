@@ -117,9 +117,7 @@ const CommingSoonPage = () => {
             </nav>
           </div>
           <div className="row d-flex justify-center">
-            <div
-              className="col-12"
-              id="tooglebtncol">
+            <div className="col-12" id="tooglebtncol">
               <div class="toggle-button">
                 <input type="checkbox" id="toggle" class="toggle-input" />
                 <label for="toggle" class="toggle-label">
@@ -192,8 +190,11 @@ const CommingSoonPage = () => {
           </div>
           <div className="row my-5" id="threedivrow">
             <div className="col-lg-4 col-12 p-3 ">
-              <img src="/tool.png" alt="" />
-              <h4 id="h4first">First and Biggest AI tool set</h4>
+              <img src="/tool.png" alt="" width={52} height={52} />
+              <h4 id="h4first">
+                <span className="textgradientcols">First</span> and
+                <span className="textgradientcols"> Biggest</span> AI tool set
+              </h4>
               <p className="paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Tempora quasi nihil, ducimus ut ea exercitationem velit.
@@ -201,8 +202,10 @@ const CommingSoonPage = () => {
               </p>
             </div>
             <div className="col-lg-4 col-12 p-3">
-              <img src="/ease.png" alt="" />
-              <h4 id="h4second">Computation with Ease</h4>
+              <img src="/ease.png" alt="" width={52} height={52} />
+              <h4 id="h4second">
+                <span className="textgradientcols">Computation</span> with Ease
+              </h4>
               <p className="paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Tempora quasi nihil, ducimus ut ea exercitationem velit.
@@ -210,8 +213,10 @@ const CommingSoonPage = () => {
               </p>
             </div>
             <div className="col-lg-4 col-12 p-3">
-              <img src="/cost.png" alt="" />
-              <h4 id="h4third">No Minimum Cost Limit</h4>
+              <img src="/cost.png" alt="" width={52} height={52}/>
+              <h4 id="h4third">
+                <span className="textgradientcols">No Minimum</span> Cost Limit
+              </h4>
               <p className="paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Tempora quasi nihil, ducimus ut ea exercitationem velit.
