@@ -14,7 +14,7 @@ const initState = {
 const CommingSoonPage = () => {
   const [state, setState] = useState(initState);
   const { values, isloading } = state;
-  const [isActive, setIsActive] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const onSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -64,8 +64,10 @@ const CommingSoonPage = () => {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
   };
+  function handleClick() {
+    setClicked(true);
+  }
 
- 
   return (
     <>
       <Head>
@@ -114,9 +116,17 @@ const CommingSoonPage = () => {
               </div>
             </nav>
           </div>
-          <div className="row" >
-            <div className="col-12" id="tooglebtnrow">
-              
+          <div className="row p-2">
+            <div
+              className="col-12 p-2 d-flex justify-center"
+              id="tooglebtnrow">
+              <div class="toggle-button">
+                <input type="checkbox" id="toggle" class="toggle-input" />
+                <label for="toggle" class="toggle-label">
+                  <span class="toggle-text-on">AI Startup/Developer</span>
+                  <span class="toggle-text-off">A Very Smart End User</span>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -134,8 +144,7 @@ const CommingSoonPage = () => {
                   <div className="row" id="rowheading">
                     <div className="col-12 pt-5">
                       <h1 className=" font-bold " id="heading">
-                        Something big is on
-                        the horizon!
+                        Something big is on the horizon!
                       </h1>
                       <p className="text-2xl font-bold " id="paragraph">
                         Join us for the next big thing
