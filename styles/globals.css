@@ -30,6 +30,7 @@
 }
 #email {
   box-sizing: border-box;
+  padding: 10px;
   width: 80%;
   height: 44px;
   background: #ffffff;
@@ -90,7 +91,7 @@
   border-radius: 20px;
 }
 
-.textgradientcols{
+.textgradientcols {
   background: linear-gradient(113.63deg, #6ae678 6.76%, #38b5e7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -215,7 +216,7 @@ body.dark #mainpage {
 }
 
 /* ------------------Dropdown---------------------- */
-#Theme {
+/* #Theme {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -224,9 +225,19 @@ body.dark #mainpage {
   color: #ffffff;
   margin-right: 8px;
   margin-top: 2px;
+} */
+#Dark {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #363663;
 }
 /* Style the button that triggers the dropdown */
 .dropbtn {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
   box-sizing: border-box;
   width: 124px;
   height: 44px;
@@ -263,14 +274,14 @@ body.dark #mainpage {
 /* -------------------------------------------- */
 /* ___________________________Toogle btn start___________ */
 
-#tooglebtncol{
+#tooglebtncol {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 .toggle-button {
   display: inline-block;
   width: 450px;
-  height: 34px;
+  height: 55px;
 }
 
 .toggle-input {
@@ -280,7 +291,7 @@ body.dark #mainpage {
 .toggle-label {
   display: block;
   width: 100%;
-  height: 37px;
+  height: 55px;
   box-shadow: 0px 0px 23px 8px rgba(120, 255, 214, 0.1);
   border-radius: 56.07px;
   position: relative;
@@ -303,7 +314,7 @@ body.dark #mainpage {
   top: 2px;
   left: 2px;
   width: 226px;
-  height: 30px;
+  height: 47.5px;
   background: #ffffff;
   border-radius: 56.07px;
   transition: all 0.3s ease;
@@ -336,10 +347,9 @@ body.dark #mainpage {
 
 /* ___________________________Toogle btn end________________ */
 @media screen and (max-width: 570px) {
-  
-.toggle-button {
-  width: 300px;
-}
+  .toggle-button {
+    width: 300px;
+  }
   .toggle-label:before {
     width: 147px;
   }
@@ -387,11 +397,11 @@ body.dark #mainpage {
     display: flex;
     justify-content: flex-start;
   }
-  #threedivcol1{
-    border-bottom:1px solid #131335;
+  #threedivcol1 {
+    border-bottom: 1px solid #131335;
   }
-  #threedivcol2{
-    border-bottom:1px solid #131335;
+  #threedivcol2 {
+    border-bottom: 1px solid #131335;
   }
 }
 @media screen and (min-width: 990px) {
@@ -402,10 +412,10 @@ body.dark #mainpage {
   #imgmain2 {
     display: none;
   }
-  #threedivcol1{
-    border-right:1px solid #131335;
+  #threedivcol1 {
+    border-right: 1px solid #131335;
   }
-  #threedivcol2{
-    border-right:1px solid #131335;
+  #threedivcol2 {
+    border-right: 1px solid #131335;
   }
 }
