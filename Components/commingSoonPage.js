@@ -116,9 +116,9 @@ const CommingSoonPage = () => {
               </div>
             </nav>
           </div>
-          <div className="row p-2">
+          <div className="row d-flex justify-center">
             <div
-              className="col-12 p-2 d-flex justify-center"
+              className="col-12 d-flex justify-center"
               id="tooglebtnrow">
               <div class="toggle-button">
                 <input type="checkbox" id="toggle" class="toggle-input" />
