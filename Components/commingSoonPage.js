@@ -165,7 +165,7 @@ const CommingSoonPage = () => {
                           type={"email"}
                           className="form-control my-2"
                           id="email"
-                          placeholder="Enter your email"
+                          placeholder="Email Address"
                           name="email"
                           value={values.email}
                           onChange={handleChange}

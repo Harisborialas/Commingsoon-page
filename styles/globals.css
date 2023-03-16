@@ -37,6 +37,13 @@
   border: 1px solid #181846;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: #9292a5;
 }
 #btn {
   width: 80%;
