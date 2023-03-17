@@ -182,6 +182,9 @@
   line-height: 29px;
   color: #ffffff;
 }
+#imgfollowus1{
+  display: none;
+}
 
 /* Light theme */
 body.light #maincontainer,

@@ -2,6 +2,7 @@ import { sendContactForm } from "@/lib/api";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
+import Toogle from "./toogle/Toogle";
 
 const initvalues = {
   email: "",
@@ -130,13 +131,7 @@ const CommingSoonPage = () => {
           </div>
           <div className="row my-3 d-flex justify-center">
             <div className="col-12" id="tooglebtncol">
-              <div class="toggle-button">
-                <input type="checkbox" id="toggle" class="toggle-input" />
-                <label for="toggle" class="toggle-label">
-                  <span class="toggle-text-on">AI Startup/Developer</span>
-                  <span class="toggle-text-off">A Very Smart End User</span>
-                </label>
-              </div>
+              <Toogle/>
             </div>
           </div>
 
