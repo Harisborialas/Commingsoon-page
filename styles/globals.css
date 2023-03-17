@@ -357,7 +357,7 @@ body.dark #mainpage {
 /* ___________________________Toogle btn end________________ */
 @media screen and (max-width: 570px) {
   .toggle-button {
-    width: 300px;
+    width: 330px;
   }
   .toggle-label:before {
     width: 150px;
@@ -367,11 +367,11 @@ body.dark #mainpage {
   .toggle-text-on,
   .toggle-text-off {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .toggle-text-on {
-    left: 16px;
+    left: 18px;
   }
 
   .toggle-text-off {
@@ -379,7 +379,7 @@ body.dark #mainpage {
   }
 
   .toggle-input:checked + .toggle-label:before {
-    transform: translateX(140px);
+    transform: translateX(168px);
   }
 }
 
