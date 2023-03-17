@@ -311,7 +311,7 @@ body.dark #mainpage {
   top: 3px;
   left: 3.5px;
   bottom: 3px;
-  width: 237px;
+  width: 255px;
   height: 45.4px;
   background-color: #ffffff;
   border-radius: 56.07px;
@@ -330,7 +330,7 @@ body.dark #mainpage {
 .toggle-text-on {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 30px;
   transform: translateY(-50%);
   font-family: "Poppins";
   font-style: normal;
@@ -342,7 +342,7 @@ body.dark #mainpage {
 .toggle-text-off {
   position: absolute;
   top: 50%;
-  right: 18px;
+  right: 30px;
   transform: translateY(-50%);
   font-family: "Poppins";
   font-style: normal;
@@ -351,7 +351,7 @@ body.dark #mainpage {
   line-height: 25px;
 }
 .toggle-input:checked + .toggle-label:before {
-  transform: translateX(265px);
+  transform: translateX(247px);
 }
 
 /* ___________________________Toogle btn end________________ */
