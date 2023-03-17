@@ -277,7 +277,7 @@ body.dark #mainpage {
 }
 .toggle-button {
   display: inline-block;
-  width: 480px;
+  width: 512px;
   height: 55px;
 }
 
@@ -312,7 +312,7 @@ body.dark #mainpage {
   left: 3.5px;
   bottom: 3px;
   width: 237px;
-  height: 45.5px;
+  height: 45.4px;
   background-color: #ffffff;
   border-radius: 56.07px;
   transition: all 0.3s ease;
@@ -330,7 +330,7 @@ body.dark #mainpage {
 .toggle-text-on {
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 20px;
   transform: translateY(-50%);
   font-family: "Poppins";
   font-style: normal;
@@ -351,7 +351,7 @@ body.dark #mainpage {
   line-height: 25px;
 }
 .toggle-input:checked + .toggle-label:before {
-  transform: translateX(234px);
+  transform: translateX(265px);
 }
 
 /* ___________________________Toogle btn end________________ */
