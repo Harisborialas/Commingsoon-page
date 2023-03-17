@@ -99,9 +99,21 @@ const CommingSoonPage = () => {
                 <span class="navbar-text d-flex justify-center">
                   <div class="dropdown">
                     <button class="dropbtn">
-                      <img src="/mode.png" alt="" width={20} height={20} className="mx-2 " />
-                      <span id="Dark" >Dark</span>
-                      <img src="/arrow.png" alt="" width={20} height={20} className="mx-2 mt-1"/>
+                      <img
+                        src="/mode.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="mx-2 "
+                      />
+                      <span id="Dark">Dark</span>
+                      <img
+                        src="/arrow.png"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="mx-2 mt-1"
+                      />
                     </button>
                     <div class="dropdown-content">
                       <a href="#" id="dark-theme-link" onClick={darktheme}>
@@ -189,7 +201,7 @@ const CommingSoonPage = () => {
             </div>
           </div>
           <div className="row my-5" id="threedivrow">
-            <div className="col-lg-4 col-12 p-3" id="threedivcol1">
+            <div className="col-lg-4 col-12 p-5" id="threedivcol1">
               <img src="/tool.png" alt="" width={52} height={52} />
               <h4 id="h4first">
                 <span className="textgradientcols">First</span> and
@@ -201,7 +213,7 @@ const CommingSoonPage = () => {
                 Repellendus delectus voluptatum iusto, alias id.
               </p>
             </div>
-            <div className="col-lg-4 col-12 p-3" id="threedivcol2">
+            <div className="col-lg-4 col-12 p-5" id="threedivcol2">
               <img src="/ease.png" alt="" width={52} height={52} />
               <h4 id="h4second">
                 <span className="textgradientcols">Computation</span> with Ease
@@ -212,7 +224,7 @@ const CommingSoonPage = () => {
                 Repellendus delectus voluptatum iusto, alias id.
               </p>
             </div>
-            <div className="col-lg-4 col-12 p-3">
+            <div className="col-lg-4 col-12 p-5">
               <img src="/cost.png" alt="" width={52} height={52} />
               <h4 id="h4third">
                 <span className="textgradientcols">No Minimum</span> Cost Limit
@@ -226,18 +238,26 @@ const CommingSoonPage = () => {
           </div>
 
           <div className="row " id="footer">
-            <div className="col-lg-6 col-12 pt-3 " id="footerimg">
-              <a href="#">
+            <div className="col-lg-6 col-12 pt-2" id="footerimg">
+              <div className="d-flex justify-start">
+                <h4 id="followus">Follow US</h4>
                 <img
-                  src="/Twitter.png"
+                  src="/DTwitter.svg"
+                  id="imgfollowus1"
                   alt=""
-                  id="imgfooter"
-                  width={100}
-                  height={100}
+                  width={15}
+                  height={15}
                 />
-              </a>
+                <img
+                  src="/Twitter.svg"
+                  alt=""
+                  width={15}
+                  height={15}
+                  id="imgfollowus2"
+                />
+              </div>
             </div>
-            <div className="col-lg-6 col-12 pt-2 " id="footerparas">
+            <div className="col-lg-6 col-12 pt-3 " id="footerparas">
               <p id="footerp1">©2023 All rights reserved.</p>
               <p id="footerp2">Privacy Policy</p>
             </div>

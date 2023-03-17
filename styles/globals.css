@@ -141,9 +141,16 @@
   position: relative;
   bottom: 0%;
 }
-#imgfooter {
-  border-radius: 5px;
-  background: #121228;
+
+#followus {
+  margin-top:12px;
+  margin-right: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 29px;
+  color: #ffffff;
 }
 #footerimg {
   display: flex;
@@ -192,6 +199,7 @@ body.light #paragraph,
 body.light #email,
 body.light #heading,
 body.light #footerparas,
+body.light #followus,
 body.light #imgfooter,
 body.light #imgmain1,
 body.light #imgmain2,
@@ -199,11 +207,13 @@ body.light #paragraph {
   /* background-color: white; */
   color: #121228;
 }
+body.light #imgfollowus2{
+  display: none;
+}
 
 body.light #btn {
   background-color: #121228;
   color: #ffffff;
-
   box-shadow: 0px 0px 23px 8px rgba(120, 255, 214, 0.1);
 }
 
@@ -220,6 +230,9 @@ body.light span {
 body.dark #mainpage {
   background-color: #121228;
   color: #f5f5f5;
+}
+body.dark #imgfollowus1{
+  display: none;
 }
 
 /* ------------------Dropdown---------------------- */
@@ -269,6 +282,7 @@ body.dark #mainpage {
   display: block;
 }
 /* -------------------------------------------- */
+
 /* ___________________________Toogle btn start___________ */
 
 #tooglebtncol {
@@ -301,7 +315,6 @@ body.dark #mainpage {
   background-clip: padding-box, border-box;
   background-origin: border-box;
   border: 2px solid transparent;
-  
 }
 
 .toggle-label:before {
@@ -316,7 +329,6 @@ body.dark #mainpage {
   background-color: #ffffff;
   border-radius: 56.07px;
   transition: all 0.3s ease;
-
 }
 .toggle-input:checked + .toggle-label .toggle-text-on {
   color: #ffffff;
@@ -346,7 +358,7 @@ body.dark #mainpage {
   transform: translateY(-50%);
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 18px;
   line-height: 25px;
 }
@@ -355,6 +367,7 @@ body.dark #mainpage {
 }
 
 /* ___________________________Toogle btn end________________ */
+
 @media screen and (max-width: 570px) {
   .toggle-button {
     width: 330px;
