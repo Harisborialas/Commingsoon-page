@@ -14,7 +14,6 @@ const initState = {
 const CommingSoonPage = () => {
   const [state, setState] = useState(initState);
   const { values, isloading } = state;
-  const [clicked, setClicked] = useState(false);
 
   const onSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -64,9 +63,6 @@ const CommingSoonPage = () => {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
   };
-  function handleClick() {
-    setClicked(true);
-  }
 
   return (
     <>

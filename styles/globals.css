@@ -223,16 +223,7 @@ body.dark #mainpage {
 }
 
 /* ------------------Dropdown---------------------- */
-/* #Theme {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 33px;
-  color: #ffffff;
-  margin-right: 8px;
-  margin-top: 2px;
-} */
+
 #Dark {
   font-family: "Poppins";
   font-style: normal;
@@ -248,9 +239,8 @@ body.dark #mainpage {
   box-sizing: border-box;
   width: 124px;
   height: 44px;
-  color: #797979;
-  background-color: #161631;
-  border: 1px solid #181846;
+  background: #0e0e1e;
+  border: 1px solid #131335;
   border-radius: 6px;
 }
 
@@ -287,7 +277,7 @@ body.dark #mainpage {
 }
 .toggle-button {
   display: inline-block;
-  width: 450px;
+  width: 480px;
   height: 55px;
 }
 
@@ -304,9 +294,8 @@ body.dark #mainpage {
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  /* color: #ffffff; */
   background: transparent;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   background-image: linear-gradient(90deg, #121228, #121228),
     linear-gradient(45deg, #a8ff78, #78ffd6);
   background-clip: padding-box, border-box;
@@ -318,38 +307,49 @@ body.dark #mainpage {
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 226px;
-  height: 47.5px;
-  background: #ffffff;
+  top: 3px;
+  left: 3px;
+  bottom: 3px;
+  width: 237px;
+  height: 45.5px;
+  background-color: #ffffff;
   border-radius: 56.07px;
   transition: all 0.3s ease;
 }
+.toggle-input:checked + .toggle-label .toggle-text-on {
+  color: #ffffff;
+  font-weight: 400;
+}
+.toggle-input:not(:checked) + .toggle-label .toggle-text-off {
+  color: #ffffff;
+  font-weight: 400;
+}
 
-.toggle-text-on,
-.toggle-text-off {
+.toggle-text-on {
   position: absolute;
   top: 50%;
+  left: 18px;
   transform: translateY(-50%);
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* color: #121228; */
-}
-
-.toggle-text-on {
-  left: 10px;
 }
 
 .toggle-text-off {
-  right: 10px;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
 }
-
 .toggle-input:checked + .toggle-label:before {
-  transform: translateX(216px);
+  transform: translateX(234px);
 }
 
 /* ___________________________Toogle btn end________________ */
