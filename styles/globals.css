@@ -360,25 +360,26 @@ body.dark #mainpage {
     width: 300px;
   }
   .toggle-label:before {
-    width: 147px;
+    width: 150px;
+    height: 44px;
   }
 
   .toggle-text-on,
   .toggle-text-off {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .toggle-text-on {
-    left: 10px;
+    left: 16px;
   }
 
   .toggle-text-off {
-    right: 10px;
+    right: 16px;
   }
 
   .toggle-input:checked + .toggle-label:before {
-    transform: translateX(145px);
+    transform: translateX(140px);
   }
 }
 
