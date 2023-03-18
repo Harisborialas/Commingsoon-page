@@ -86,9 +86,9 @@ body.light #btn {
   display: none;
 }
 #midimgbackground1 {
-  background-image: url("/Dbackgroundpic.png");
+  background-image: url("/Dbackgroundpic.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 #midimgbackground2 {
   background-image: url("/Lbackgroundpic.svg");

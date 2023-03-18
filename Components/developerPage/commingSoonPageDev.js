@@ -269,7 +269,7 @@ const CommingSoonPageDev = () => {
           {/* ________________________________________END_____________________________________________________ */}
           <div className="row my-5" id="threedivrow">
             <div className="col-lg-4 col-12 p-5" id="threedivcol1">
-              <img src="/tool.png" alt="" width={52} height={52} />
+              <img src="/tool.svg" alt="" width={52} height={52} />
               <h4 id="h4first">
                 <span className="textgradientcols">First</span> and
                 <span className="textgradientcols"> Biggest</span> AI tool set
@@ -281,7 +281,7 @@ const CommingSoonPageDev = () => {
               </p>
             </div>
             <div className="col-lg-4 col-12 p-5" id="threedivcol2">
-              <img src="/ease.png" alt="" width={52} height={52} />
+              <img src="/ease.svg" alt="" width={52} height={52} />
               <h4 id="h4second">
                 <span className="textgradientcols">Computation</span> with Ease
               </h4>
@@ -292,7 +292,7 @@ const CommingSoonPageDev = () => {
               </p>
             </div>
             <div className="col-lg-4 col-12 p-5">
-              <img src="/cost.png" alt="" width={52} height={52} />
+              <img src="/cost.svg" alt="" width={52} height={52} />
               <h4 id="h4third">
                 <span className="textgradientcols">No Minimum</span> Cost Limit
               </h4>
