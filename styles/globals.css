@@ -82,10 +82,27 @@ body.light #btn {
 
   color: #ffffff;
 }
-#midimgbackground {
+#middlerow2{
+  display: none;
+}
+#midimgbackground1 {
   background-image: url("/Dbackgroundpic.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+#midimgbackground2 {
+  background-image: url("/Lbackgroundpic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body.light #middlerow1{
+  display: none;
+}
+body.light #middlerow2{
+  display: block;
+}
+body.dark #middlerow2{
+  display: none;
 }
 
 #paragraph {
@@ -107,7 +124,7 @@ body.light #btn {
 }
 body.light #threedivrow {
   background: #FCFCFC;
-  border: 1px solid #ffffff;
+  border: 1px solid #FCFCFC;
 }
 
 .textgradientcols {
