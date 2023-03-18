@@ -2,7 +2,7 @@ import { sendContactForm } from "@/lib/api";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Toogle from "./toogle/Toogle";
+import Toogle from "../toogle/Toogle";
 
 const initvalues = {
   email: "",
@@ -12,7 +12,7 @@ const initState = {
   errorMsg: "",
 };
 
-const CommingSoonPage = () => {
+const CommingSoonPageDev = () => {
   const [state, setState] = useState(initState);
   const { values, isloading } = state;
 
@@ -91,39 +91,46 @@ const CommingSoonPage = () => {
       <div className="container-fluid" id="body">
         <div className="container" id="maincontainer">
           <div className="row">
-            <nav class="navbar my-4">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#" id="BYC">
-                  <img src="/logo.png" alt="Logo" class="d-inline-block" />
+            <nav className="navbar my-4">
+              <div className="container-fluid">
+                <a className="navbar-brand" href="#" id="BYC">
+                  <img src="/logo.png" alt="Logo" className="d-inline-block" />
                   <span id="BYCtext">BYC</span>
                 </a>
-                <span class="navbar-text d-flex justify-center">
-                  <div class="dropdown">
-                    <button class="dropbtn">
+                <span className="navbar-text d-flex justify-center">
+                  <div className="dropdown">
+                    <button className="dropbtn1" onClick={lighttheme}>
                       <img
-                        src="/mode.png"
+                        src="/Lmode.svg"
                         alt=""
-                        width={20}
-                        height={20}
-                        className="mx-2 "
+                        width={24}
+                        height={24}
+                        className="mx-1"
                       />
-                      <span id="Dark">Dark</span>
-                      <img
-                        src="/arrow.png"
-                        alt=""
-                        width={20}
-                        height={20}
-                        className="mx-2 mt-1"
-                      />
+                      <span className="mx-1" id="Dark1">
+                        Light
+                      </span>
                     </button>
-                    <div class="dropdown-content">
+                    <button className="dropbtn2" onClick={darktheme}>
+                      <img
+                        src="/Dmode.svg"
+                        alt=""
+                        width={24}
+                        height={24}
+                        className="mx-1"
+                      />
+                      <span className="mx-1" id="Dark2">
+                        Dark
+                      </span>
+                    </button>
+                    {/* <div className="dropdown-content">
                       <a href="#" id="dark-theme-link" onClick={darktheme}>
                         dark
                       </a>
-                      <a href="#" id="light-theme-link" onClick={lighttheme}>
+                      <a href="#" id="light-theme-link">
                         light
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </span>
               </div>
@@ -131,7 +138,13 @@ const CommingSoonPage = () => {
           </div>
           <div className="row my-3 d-flex justify-center">
             <div className="col-12" id="tooglebtncol">
-              <Toogle/>
+              <div class="toggle-button">
+                <input type="checkbox" id="toggle" class="toggle-input" />
+                <label for="toggle" class="toggle-label">
+                  <span class="toggle-text-on">AI Startup/Developer</span>
+                  <span class="toggle-text-off">A Very Smart End User</span>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -262,4 +275,4 @@ const CommingSoonPage = () => {
     </>
   );
 };
-export default CommingSoonPage;
+export default CommingSoonPageDev;
