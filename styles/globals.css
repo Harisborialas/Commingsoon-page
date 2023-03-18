@@ -318,13 +318,17 @@ body.dark .dropbtn1{
   border-radius: 56.07px;
   position: relative;
   transition: background-color 0.3s ease;
-  background: transparent;
   padding: 1rem 1rem;
   background-image: linear-gradient(90deg, #121228, #121228),
     linear-gradient(45deg, #a8ff78, #78ffd6);
   background-clip: padding-box, border-box;
   background-origin: border-box;
   border: 2px solid transparent;
+}
+body.light .toggle-label{
+  
+  background-image: linear-gradient(90deg, #ffffff, #ffffff),
+  linear-gradient(45deg, #a8ff78, #78ffd6);
 }
 
 .toggle-label:before {
@@ -345,9 +349,37 @@ body.dark .dropbtn1{
   color: #ffffff;
   font-weight: 400;
 }
+body.light .toggle-input:checked + .toggle-label .toggle-text-on{
+  color: #121228;
+  font-weight: 400;
+}
+body.light .toggle-input:not(:checked) + .toggle-label .toggle-text-off{
+  color: #121228;
+  font-weight: 400;
+}
+body.light .toggle-label:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+  bottom: 3px;
+  width: 255px;
+  height: 45.4px;
+  border-radius: 56.07px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #121228;
+}
 .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
   color: #ffffff;
   font-weight: 400;
+}
+body.light .toggle-text-on{
+  color: #ffffff;
+}
+body.light .toggle-text-off{
+  color: #ffffff;
 }
 
 .toggle-text-on {
