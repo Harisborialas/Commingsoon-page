@@ -354,17 +354,7 @@ body.light .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
   font-weight: 400;
 }
 body.light .toggle-label:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 3.5px;
-  bottom: 3px;
-  width: 255px;
-  height: 45.4px;
-  border-radius: 56.07px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  
   background-color: #121228;
 }
 .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
