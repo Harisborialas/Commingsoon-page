@@ -1,6 +1,5 @@
 import { sendContactForm } from "@/lib/api";
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import Toogle from "../toogle/Toogle";
 
@@ -9,7 +8,6 @@ const initvalues = {
 };
 const initState = {
   values: initvalues,
-  errorMsg: "",
 };
 
 const CommingSoonPageDev = () => {
@@ -19,13 +17,6 @@ const CommingSoonPageDev = () => {
   const onSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(values.email)) {
-      // errorMsg: "Please enter a valid email address.";
-      // alert("Please enter a valid email address.");
-      // return;
-      setState((prev) => ({
-        ...prev,
-        errorMsg: "Please enter a valid email address.",
-      }));
       return;
     }
     setState((prev) => ({
@@ -191,11 +182,7 @@ const CommingSoonPageDev = () => {
                           required
                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         />
-                        <div>
-                          {state.errorMsg && (
-                            <p style={{ color: "red" }}>{state.errorMsg}</p>
-                          )}
-                        </div>
+                       
                         <button
                           type="submit"
                           onClick={onSubmit}
