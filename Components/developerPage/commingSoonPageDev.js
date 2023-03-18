@@ -123,14 +123,6 @@ const CommingSoonPageDev = () => {
                         Dark
                       </span>
                     </button>
-                    {/* <div className="dropdown-content">
-                      <a href="#" id="dark-theme-link" onClick={darktheme}>
-                        dark
-                      </a>
-                      <a href="#" id="light-theme-link">
-                        light
-                      </a>
-                    </div> */}
                   </div>
                 </span>
               </div>
@@ -148,14 +140,20 @@ const CommingSoonPageDev = () => {
             </div>
           </div>
 
-          <div className="row my-5">
+          <div className="row my-5 border">
             <div className="col-lg-12 col-12">
               <div className="row">
                 <div
                   className="col-lg-6 col-12 py-2 order-2 order-lg-1"
                   id="imgmain1">
-                  <img src="/sideimage.png" alt="" width={600} height={500} />
+                  <img src="/Dsideimage.svg" alt="" width={600} height={500} />
                 </div>
+                <div
+                  className="col-lg-6 col-12 py-2 order-2 order-lg-1"
+                  id="imgmain12">
+                  <img src="/Lsideimage.svg" alt="" width={600} height={500} />
+                </div>
+
                 <div
                   className="col-lg-6 col-12 py-2 order-1 order-lg-2"
                   id="midimgbackground">
@@ -171,7 +169,12 @@ const CommingSoonPageDev = () => {
                   </div>
                   <div className="row" id="imgmain2">
                     <div className="col-12" id="imgcolmain2">
-                      <img src="/sideimage.png" alt="" />
+                      <img src="/Dsideimage.svg" alt="" />
+                    </div>
+                  </div>
+                  <div className="row" id="imgmain22">
+                    <div className="col-12" id="imgcolmain2">
+                      <img src="/Lsideimage.svg" alt="" />
                     </div>
                   </div>
                   <div className="row" id="rowform">
