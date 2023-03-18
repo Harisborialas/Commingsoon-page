@@ -85,7 +85,7 @@ const CommingSoonPageDev = () => {
             <nav className="navbar my-4">
               <div className="container-fluid">
                 <a className="navbar-brand" href="#" id="BYC">
-                  <img src="/logo.png" alt="Logo" className="d-inline-block" />
+                  <img src="/logo.svg" alt="Logo" className="d-inline-block" />
                   <span id="BYCtext">BYC</span>
                 </a>
                 <span className="navbar-text d-flex justify-center">
