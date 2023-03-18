@@ -98,11 +98,16 @@ body.light #btn {
   line-height: 29px;
   color: #ffffff;
 }
+
 #threedivrow {
   box-sizing: border-box;
   background: #0e0e1e;
   border: 1px solid #131335;
   border-radius: 20px;
+}
+body.light #threedivrow {
+  background: #FCFCFC;
+  border: 1px solid #ffffff;
 }
 
 .textgradientcols {
@@ -119,6 +124,15 @@ body.light #btn {
   font-size: 23px;
   line-height: 48px;
   color: white;
+}
+body.light #h4first {
+  color: #121228;
+}
+body.light #h4second {
+  color: #121228;
+}
+body.light #h4third {
+  color: #121228;
 }
 #h4second {
   font-family: "Poppins";
@@ -143,6 +157,9 @@ body.light #btn {
   font-size: 18px;
   line-height: 33px;
   color: #e9e9e9;
+}
+body.light .paragraph {
+  color: #000000;
 }
 #footer {
   position: relative;
@@ -210,8 +227,7 @@ body.light #email,
 body.light #heading,
 body.light #footerparas,
 body.light #followus,
-body.light #imgfooter,
-body.light #paragraph {
+body.light #imgfooter {
   /* background-color: white; */
   color: #121228;
 }
@@ -468,6 +484,12 @@ body.light .toggle-text-off {
   #threedivcol2 {
     border-bottom: 1px solid #131335;
   }
+  body.light #threedivcol1 {
+    border-bottom: 1px solid #F0F0F0;
+  }
+  body.light #threedivcol2 {
+    border-bottom: 1px solid #F0F0F0;
+  }
 }
 @media screen and (min-width: 990px) {
   #imgmain1 {
@@ -493,5 +515,11 @@ body.light .toggle-text-off {
   }
   #threedivcol2 {
     border-right: 1px solid #131335;
+  }
+  body.light #threedivcol1 {
+    border-right: 1px solid #F0F0F0;
+  }
+  body.light #threedivcol2 {
+    border-right: 1px solid #F0F0F0;
   }
 }
