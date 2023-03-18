@@ -453,8 +453,7 @@ body.dark .dropbtn1{
 }
 @media screen and (min-width: 990px) {
   #imgmain1 {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
   #imgmain2 {
     display: none;

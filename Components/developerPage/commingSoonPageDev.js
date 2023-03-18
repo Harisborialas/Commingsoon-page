@@ -140,16 +140,16 @@ const CommingSoonPageDev = () => {
             </div>
           </div>
 
-          <div className="row my-5 border">
+          <div className="row my-5">
             <div className="col-lg-12 col-12">
               <div className="row">
                 <div
-                  className="col-lg-6 col-12 py-2 order-2 order-lg-1"
+                  className="col-lg-6 col-12 order-2 order-lg-1"
                   id="imgmain1">
                   <img src="/Dsideimage.svg" alt="" width={600} height={500} />
                 </div>
                 <div
-                  className="col-lg-6 col-12 py-2 order-2 order-lg-1"
+                  className="col-lg-6 col-12 order-2 order-lg-1"
                   id="imgmain12">
                   <img src="/Lsideimage.svg" alt="" width={600} height={500} />
                 </div>
