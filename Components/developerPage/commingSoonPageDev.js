@@ -137,12 +137,7 @@ const CommingSoonPageDev = () => {
                 <div
                   className="col-lg-6 col-12 order-2 order-lg-1"
                   id="imgmain1">
-                  <img src="/Dsideimage.svg" alt="" width={600} height={500} />
-                </div>
-                <div
-                  className="col-lg-6 col-12 order-2 order-lg-1"
-                  id="imgmain12">
-                  <img src="/Lsideimage.svg" alt="" width={600} height={500} />
+                  <img src="/Dsideimage.svg" alt=""  />
                 </div>
 
                 <div
@@ -202,15 +197,11 @@ const CommingSoonPageDev = () => {
           <div className="row my-5 " id="middlerow2">
             <div className="col-lg-12 col-12">
               <div className="row">
-                <div
-                  className="col-lg-6 col-12 order-2 order-lg-1"
-                  id="imgmain1">
-                  <img src="/Dsideimage.svg" alt="" width={600} height={500} />
-                </div>
+                
                 <div
                   className="col-lg-6 col-12 order-2 order-lg-1"
                   id="imgmain12">
-                  <img src="/Lsideimage.svg" alt="" width={600} height={500} />
+                  <img src="/Lsideimage.svg" alt="" width={600} height={500}  />
                 </div>
 
                 <div
