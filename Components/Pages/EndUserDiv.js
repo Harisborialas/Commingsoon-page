@@ -123,7 +123,7 @@ const EndUserDiv = () => {
                   <div className="row" id="rowheading">
                     <div className="col-12 pt-5">
                       <h1 className=" font-bold " id="heading">
-                        Something big is on the horizon!
+                       User Something big is on the horizon!
                       </h1>
                       <p className="text-2xl font-bold " id="paragraph">
                         Join us for the next big thing
