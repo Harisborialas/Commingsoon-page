@@ -68,7 +68,7 @@
   color: #ffffff;
 }
 body.light #btn {
-  color:#121228 ;
+  color: #121228;
   background-image: linear-gradient(90deg, #ffffff, #ffffff),
     linear-gradient(45deg, #a8ff78, #78ffd6);
 }
@@ -82,7 +82,7 @@ body.light #btn {
 
   color: #ffffff;
 }
-#middlerow2{
+#middlerow2 {
   display: none;
 }
 #midimgbackground1 {
@@ -95,16 +95,18 @@ body.light #btn {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body.light #middlerow1{
+body.light #middlerow1 {
   display: none;
 }
-body.light #middlerow2{
+body.light #middlerow2 {
   display: block;
 }
-body.dark #middlerow2{
+body.dark #middlerow2 {
   display: none;
 }
-
+.error-message {
+  color: red;
+}
 #paragraph {
   width: 241px;
   height: 30px;
@@ -123,8 +125,8 @@ body.dark #middlerow2{
   border-radius: 20px;
 }
 body.light #threedivrow {
-  background: #FCFCFC;
-  border: 1px solid #FCFCFC;
+  background: #fcfcfc;
+  border: 1px solid #fcfcfc;
 }
 
 .textgradientcols {
@@ -256,8 +258,6 @@ body.light #imgfollowus2 {
   display: none;
 }
 
-
-
 body.light .dropbtn2 {
   display: flex;
   justify-content: flex-start;
@@ -387,7 +387,6 @@ body.light .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
   font-weight: 400;
 }
 body.light .toggle-label:before {
-  
   background-color: #121228;
 }
 .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
@@ -502,10 +501,10 @@ body.light .toggle-text-off {
     border-bottom: 1px solid #131335;
   }
   body.light #threedivcol1 {
-    border-bottom: 1px solid #F0F0F0;
+    border-bottom: 1px solid #f0f0f0;
   }
   body.light #threedivcol2 {
-    border-bottom: 1px solid #F0F0F0;
+    border-bottom: 1px solid #f0f0f0;
   }
 }
 @media screen and (min-width: 990px) {
@@ -534,9 +533,9 @@ body.light .toggle-text-off {
     border-right: 1px solid #131335;
   }
   body.light #threedivcol1 {
-    border-right: 1px solid #F0F0F0;
+    border-right: 1px solid #f0f0f0;
   }
   body.light #threedivcol2 {
-    border-right: 1px solid #F0F0F0;
+    border-right: 1px solid #f0f0f0;
   }
 }

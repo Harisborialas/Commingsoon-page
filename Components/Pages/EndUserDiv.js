@@ -10,12 +10,15 @@ const initState = {
 const EndUserDiv = () => {
   const [state, setState] = useState(initState);
   const { values, isloading } = state;
+  const [isValidEmail, setIsValidEmail] = useState(false);
 
   const onSubmit = async () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(values.email)) {
+      setIsValidEmail(false);
       return;
     }
+    setIsValidEmail(true);
     setState((prev) => ({
       ...prev,
       errorMsg: "Please enter a valid email address.",
@@ -89,7 +92,9 @@ const EndUserDiv = () => {
                       required
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     />
-
+                    {!isValidEmail && (
+                      <div>Please enter a valid email address.</div>
+                    )}
                     <button
                       type="submit"
                       onClick={onSubmit}
@@ -110,7 +115,7 @@ const EndUserDiv = () => {
         <div className="col-lg-12 col-12">
           <div className="row">
             <div className="col-lg-6 col-12 order-2 order-lg-1" id="imgmain12">
-              <img src="/Lsideimage.svg" alt="" />
+              <img src="/Lsideimage.png" alt="" />
             </div>
 
             <div
@@ -150,7 +155,9 @@ const EndUserDiv = () => {
                       required
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     />
-
+                    {!isValidEmail && (
+                      <div>Please enter a valid email address.</div>
+                    )}
                     <button
                       type="submit"
                       onClick={onSubmit}
