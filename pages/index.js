@@ -1,12 +1,11 @@
-import CommingSoonPageDev from "@/Components/developerPage/commingSoonPageDev";
-// import CommingSoonPageUser from "@/Components/userPage/CommingsoonPageUser";
+import CommingSoonPage from "@/Components/mainPage/commingSoonPage";
 
 export default function Home() {
 
 
   return (
     <>
-      <CommingSoonPageDev/>
+      <CommingSoonPage/>
       {/* <CommingSoonPageUser/> */}
     </>
   );

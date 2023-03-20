@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import DeveloprDiv from "../Pages/DeveloperDiv";
 import EndUserDiv from "../Pages/EndUserDiv";
 
-const CommingSoonPageDev = () => {
+const CommingSoonPage = () => {
   const [userType, setUserType] = useState('developer');
   const darktheme = () => {
     document.body.classList.remove("light");
@@ -159,4 +159,4 @@ const CommingSoonPageDev = () => {
     </>
   );
 };
-export default CommingSoonPageDev;
+export default CommingSoonPage;

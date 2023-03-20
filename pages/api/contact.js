@@ -25,10 +25,9 @@ const handler = async (req, res) => {
     const data = req.body;
     if (!data.email) {
       return res.status(400).json({ message: "email is required" });
-    }
-    else{
+    } else {
       supabase
-        .from("users")
+        .from("developers")
         .insert({ data }) // pass email value as a property of an object
         .then((res) => {
           console.log(res);
