@@ -93,7 +93,7 @@ body.light #btn {
 #midimgbackground2 {
   background-image: url("/Lbackgroundpic.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 body.light #middlerow1{
   display: none;
@@ -519,7 +519,7 @@ body.light .toggle-text-off {
     display: none;
   }
   body.light #imgmain12 {
-    display: block;
+    display: flex;
   }
   body.light #imgmain1 {
     display: none;
